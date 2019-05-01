@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:background="@color/colorAccent"
+        tools:src="@drawable/ic_image0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:tint="@color/white"
+        android:padding="@dimen/activity_detail_logo_padding"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/test_title_name"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/activity_detail_title_text_size"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        android:padding="@dimen/activity_detail_title_padding"
+        android:background="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/long_test_text"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:padding="16dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
