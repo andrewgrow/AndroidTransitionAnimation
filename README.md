@@ -1,0 +1,1 @@
+![Android Transition Animation](transition-animation.gif)
